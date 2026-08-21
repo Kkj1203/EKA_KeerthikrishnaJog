@@ -1,0 +1,32 @@
+[project]
+name = "enterprise-knowledge-assistant"
+version = "0.1.0"
+description = "LangGraph + RAG + RAGAS + MCP enterprise knowledge assistant"
+readme = "README.md"
+authors = [
+    { name = "Keerthikrishna Jog", email = "keerthikrishnajog120304@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-text-splitters>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "langchain-ollama>=0.2.0",
+    "langchain-chroma>=0.1.0",
+    "chromadb>=0.5.0",
+    "datasets>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "mcp>=1.0.0",
+    "streamlit>=1.40.0",
+    "langchain-google-vertexai>=3.2.4",
+    "ragas==0.3.9",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false
